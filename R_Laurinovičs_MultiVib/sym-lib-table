@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name RUTKI)(type Legacy)(uri ${KIPRJMOD}/RUTKI.lib)(options "")(descr ""))
+  (lib (name "NPN transistor array")(type Legacy)(uri "${KIPRJMOD}/Apzīm/NPN transistor array.lib")(options "")(descr ""))
+)
