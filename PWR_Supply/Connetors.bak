@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5F89CD09
+P 5360 1940
+F 0 "J2" H 5440 1932 50  0000 L CNN
+F 1 "3.3V output" H 5440 1841 50  0000 L CNN
+F 2 "" H 5360 1940 50  0001 C CNN
+F 3 "~" H 5360 1940 50  0001 C CNN
+	1    5360 1940
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5F89DB1D
+P 5360 2250
+F 0 "J3" H 5440 2242 50  0000 L CNN
+F 1 "5V output" H 5440 2151 50  0000 L CNN
+F 2 "" H 5360 2250 50  0001 C CNN
+F 3 "~" H 5360 2250 50  0001 C CNN
+	1    5360 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5F89DD5C
+P 5360 2550
+F 0 "J4" H 5440 2542 50  0000 L CNN
+F 1 "9V output" H 5440 2451 50  0000 L CNN
+F 2 "" H 5360 2550 50  0001 C CNN
+F 3 "~" H 5360 2550 50  0001 C CNN
+	1    5360 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5F89E1FB
+P 5360 2870
+F 0 "J5" H 5440 2862 50  0000 L CNN
+F 1 "12V output" H 5440 2771 50  0000 L CNN
+F 2 "" H 5360 2870 50  0001 C CNN
+F 3 "~" H 5360 2870 50  0001 C CNN
+	1    5360 2870
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5160 2040 5090 2040
+Wire Wire Line
+	5090 2040 5090 2350
+Wire Wire Line
+	5090 2350 5160 2350
+Wire Wire Line
+	5160 2650 5090 2650
+Connection ~ 5090 2350
+Wire Wire Line
+	5160 2970 5130 2970
+Wire Wire Line
+	5090 2350 5090 2650
+Connection ~ 5090 2650
+Wire Wire Line
+	5090 2650 5090 2970
+Text HLabel 5090 2970 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5160 2870 4730 2870
+Wire Wire Line
+	5160 2550 4740 2550
+Wire Wire Line
+	5160 1940 4730 1940
+Text HLabel 4650 1940 0    50   Input ~ 0
+3.3V
+Text HLabel 4660 2250 0    50   Input ~ 0
+5V
+Text HLabel 4650 2550 0    50   Input ~ 0
+9V
+Text HLabel 4650 2870 0    50   Input ~ 0
+12V
+$Comp
+L power:PWR_FLAG #FLG0110
+U 1 1 5F889A03
+P 4730 1860
+F 0 "#FLG0110" H 4730 1935 50  0001 C CNN
+F 1 "PWR_FLAG" H 4730 2033 50  0000 C CNN
+F 2 "" H 4730 1860 50  0001 C CNN
+F 3 "~" H 4730 1860 50  0001 C CNN
+	1    4730 1860
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0111
+U 1 1 5F88A3B0
+P 4740 2170
+F 0 "#FLG0111" H 4740 2245 50  0001 C CNN
+F 1 "PWR_FLAG" H 4740 2343 50  0000 C CNN
+F 2 "" H 4740 2170 50  0001 C CNN
+F 3 "~" H 4740 2170 50  0001 C CNN
+	1    4740 2170
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0112
+U 1 1 5F88A6E3
+P 4740 2490
+F 0 "#FLG0112" H 4740 2565 50  0001 C CNN
+F 1 "PWR_FLAG" H 4740 2663 50  0000 C CNN
+F 2 "" H 4740 2490 50  0001 C CNN
+F 3 "~" H 4740 2490 50  0001 C CNN
+	1    4740 2490
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0113
+U 1 1 5F88A993
+P 4730 2800
+F 0 "#FLG0113" H 4730 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 4730 2973 50  0000 C CNN
+F 2 "" H 4730 2800 50  0001 C CNN
+F 3 "~" H 4730 2800 50  0001 C CNN
+	1    4730 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0114
+U 1 1 5F88ABF0
+P 5130 3030
+F 0 "#FLG0114" H 5130 3105 50  0001 C CNN
+F 1 "PWR_FLAG" H 5130 3203 50  0000 C CNN
+F 2 "" H 5130 3030 50  0001 C CNN
+F 3 "~" H 5130 3030 50  0001 C CNN
+	1    5130 3030
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4730 2800 4730 2870
+Connection ~ 4730 2870
+Wire Wire Line
+	4730 2870 4650 2870
+Wire Wire Line
+	4740 2490 4740 2550
+Connection ~ 4740 2550
+Wire Wire Line
+	4740 2550 4650 2550
+Wire Wire Line
+	5160 2250 4740 2250
+Wire Wire Line
+	4740 2170 4740 2250
+Connection ~ 4740 2250
+Wire Wire Line
+	4740 2250 4660 2250
+Wire Wire Line
+	4730 1860 4730 1940
+Connection ~ 4730 1940
+Wire Wire Line
+	4730 1940 4650 1940
+Connection ~ 5130 2970
+Wire Wire Line
+	5130 2970 5090 2970
+Wire Wire Line
+	5130 2970 5130 3030
+$EndSCHEMATC

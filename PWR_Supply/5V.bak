@@ -1,0 +1,162 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 5F8004A0
+P 5260 3660
+AR Path="/5F7FFF52/5F8004A0" Ref="U1"  Part="1" 
+AR Path="/5F8415CA/5F8004A0" Ref="U?"  Part="1" 
+F 0 "U1" H 5260 3902 50  0000 C CNN
+F 1 "LM7805" H 5260 3811 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5260 3885 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 5260 3610 50  0001 C CNN
+	1    5260 3660
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5F8012B6
+P 4500 3810
+AR Path="/5F7FFF52/5F8012B6" Ref="C2"  Part="1" 
+AR Path="/5F8415CA/5F8012B6" Ref="C?"  Part="1" 
+F 0 "C2" H 4540 3910 50  0000 L CNN
+F 1 "100uF" H 4520 3710 50  0000 L CNN
+F 2 "" H 4538 3660 50  0001 C CNN
+F 3 "~" H 4500 3810 50  0001 C CNN
+	1    4500 3810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F8018C2
+P 4830 3810
+AR Path="/5F7FFF52/5F8018C2" Ref="C3"  Part="1" 
+AR Path="/5F8415CA/5F8018C2" Ref="C?"  Part="1" 
+F 0 "C3" H 4870 3910 50  0000 L CNN
+F 1 "100nF" H 4860 3710 50  0000 L CNN
+F 2 "" H 4868 3660 50  0001 C CNN
+F 3 "~" H 4830 3810 50  0001 C CNN
+	1    4830 3810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5F8032A0
+P 6050 3810
+AR Path="/5F7FFF52/5F8032A0" Ref="C5"  Part="1" 
+AR Path="/5F8415CA/5F8032A0" Ref="C?"  Part="1" 
+F 0 "C5" H 6110 3900 50  0000 L CNN
+F 1 "100uF" H 6090 3730 50  0000 L CNN
+F 2 "" H 6088 3660 50  0001 C CNN
+F 3 "~" H 6050 3810 50  0001 C CNN
+	1    6050 3810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F8032A6
+P 5730 3810
+AR Path="/5F7FFF52/5F8032A6" Ref="C4"  Part="1" 
+AR Path="/5F8415CA/5F8032A6" Ref="C?"  Part="1" 
+F 0 "C4" H 5770 3910 50  0000 L CNN
+F 1 "100nF" H 5770 3710 50  0000 L CNN
+F 2 "" H 5768 3660 50  0001 C CNN
+F 3 "~" H 5730 3810 50  0001 C CNN
+	1    5730 3810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4830 3660 4560 3660
+Connection ~ 4830 3660
+Wire Wire Line
+	5560 3660 5730 3660
+Wire Wire Line
+	6050 3660 5730 3660
+Connection ~ 5730 3660
+Wire Wire Line
+	6050 3960 5730 3960
+Connection ~ 5730 3960
+Wire Wire Line
+	5260 3960 4830 3960
+Connection ~ 5260 3960
+Wire Wire Line
+	4830 3960 4500 3960
+Connection ~ 4830 3960
+Text HLabel 6050 3960 2    50   Input ~ 0
+GND
+Text HLabel 6050 3660 2    50   Output ~ 0
+5V
+Text HLabel 4500 3660 0    50   Input ~ 0
+19V
+$Comp
+L Simulation_SPICE:DIODE D2
+U 1 1 5F84B9BC
+P 5260 3280
+F 0 "D2" H 5260 3063 50  0000 C CNN
+F 1 "DIODE" H 5260 3154 50  0000 C CNN
+F 2 "" H 5260 3280 50  0001 C CNN
+F 3 "~" H 5260 3280 50  0001 C CNN
+F 4 "Y" H 5260 3280 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5260 3280 50  0001 L CNN "Spice_Primitive"
+	1    5260 3280
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5730 3280 5730 3660
+Wire Wire Line
+	5410 3280 5730 3280
+Wire Wire Line
+	5110 3280 4830 3280
+Wire Wire Line
+	4830 3280 4830 3660
+Wire Wire Line
+	4960 3660 4830 3660
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5F87BF08
+P 4560 3600
+F 0 "#FLG0106" H 4560 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4560 3773 50  0000 C CNN
+F 2 "" H 4560 3600 50  0001 C CNN
+F 3 "~" H 4560 3600 50  0001 C CNN
+	1    4560 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5F87CC11
+P 5580 4020
+F 0 "#FLG0107" H 5580 4095 50  0001 C CNN
+F 1 "PWR_FLAG" H 5580 4193 50  0000 C CNN
+F 2 "" H 5580 4020 50  0001 C CNN
+F 3 "~" H 5580 4020 50  0001 C CNN
+	1    5580 4020
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5580 4020 5580 3960
+Wire Wire Line
+	5260 3960 5580 3960
+Connection ~ 5580 3960
+Wire Wire Line
+	5580 3960 5730 3960
+Wire Wire Line
+	4560 3600 4560 3660
+Connection ~ 4560 3660
+Wire Wire Line
+	4560 3660 4500 3660
+$EndSCHEMATC

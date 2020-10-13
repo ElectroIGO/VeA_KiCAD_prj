@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1400 3430 1060 470 
+U 5F7F07F4
+F0 "Transformer" 50
+F1 "230V to 16,6V.sch" 50
+F2 "GND" I L 1400 3740 50 
+F3 "19V" I L 1400 3590 50 
+$EndSheet
+$Sheet
+S 1400 2750 1050 500 
+U 5F7FFF52
+F0 "5V supply" 50
+F1 "5V.sch" 50
+F2 "GND" I L 1400 2910 50 
+F3 "5V" I L 1400 3020 50 
+F4 "19V" I L 1400 3140 50 
+$EndSheet
+$Sheet
+S 1400 2020 1050 470 
+U 5F8415CA
+F0 "3V3" 50
+F1 "3V3 supply.sch" 50
+F2 "GND" I L 1400 2170 50 
+F3 "3.3V" I L 1400 2270 50 
+F4 "19V" I L 1400 2390 50 
+$EndSheet
+$Sheet
+S 1410 4210 1040 430 
+U 5F8556EC
+F0 "12 V powersupply" 50
+F1 "12V.sch" 50
+F2 "GND" I L 1410 4330 50 
+F3 "12V" I L 1410 4450 50 
+F4 "19V" I L 1410 4580 50 
+$EndSheet
+$Sheet
+S 1400 1410 1050 440 
+U 5F8851A5
+F0 "9V powersupply" 50
+F1 "9V supply.sch" 50
+F2 "GND" I L 1400 1530 50 
+F3 "9V" I L 1400 1620 50 
+F4 "19V" I L 1400 1710 50 
+$EndSheet
+Text GLabel 1250 1330 0    50   Input ~ 0
+PowersupplyBUS
+Entry Wire Line
+	1250 1430 1350 1530
+Entry Wire Line
+	1250 2070 1350 2170
+Entry Wire Line
+	1250 2290 1350 2390
+Entry Wire Line
+	1250 2810 1350 2910
+Wire Wire Line
+	1400 1620 1350 1620
+Wire Wire Line
+	1400 1530 1350 1530
+Entry Wire Line
+	1250 1520 1350 1620
+Entry Wire Line
+	1250 1610 1350 1710
+Wire Wire Line
+	1400 1710 1350 1710
+Wire Wire Line
+	1400 2170 1350 2170
+Entry Wire Line
+	1250 2170 1350 2270
+Wire Wire Line
+	1400 2270 1350 2270
+Wire Wire Line
+	1400 2390 1350 2390
+Entry Wire Line
+	1250 2920 1350 3020
+Entry Wire Line
+	1250 3040 1350 3140
+Entry Wire Line
+	1250 3490 1350 3590
+Entry Wire Line
+	1250 3640 1350 3740
+Wire Wire Line
+	1350 2910 1400 2910
+Wire Wire Line
+	1400 3020 1350 3020
+Wire Wire Line
+	1350 3140 1400 3140
+Wire Wire Line
+	1350 3590 1400 3590
+Wire Wire Line
+	1350 3740 1400 3740
+Entry Wire Line
+	1250 4230 1350 4330
+Entry Wire Line
+	1250 4350 1350 4450
+Entry Wire Line
+	1250 4480 1350 4580
+Wire Wire Line
+	1350 4330 1410 4330
+Wire Wire Line
+	1410 4450 1350 4450
+Wire Wire Line
+	1410 4580 1350 4580
+$Sheet
+S 3110 1470 1040 430 
+U 5F89C58C
+F0 "Outputs" 50
+F1 "Connetors.sch" 50
+F2 "GND" I L 3110 1520 50 
+F3 "3.3V" I L 3110 1610 50 
+F4 "5V" I L 3110 1710 50 
+F5 "9V" I L 3110 1790 50 
+F6 "12V" I L 3110 1870 50 
+$EndSheet
+Text GLabel 2960 1270 0    50   Input ~ 0
+PowersupplyBUS
+Entry Wire Line
+	2960 1770 3060 1870
+Wire Wire Line
+	3110 1870 3060 1870
+Entry Wire Line
+	2960 1690 3060 1790
+Wire Wire Line
+	3110 1790 3060 1790
+Entry Wire Line
+	2960 1610 3060 1710
+Wire Wire Line
+	3110 1710 3060 1710
+Entry Wire Line
+	2960 1510 3060 1610
+Wire Wire Line
+	3110 1610 3060 1610
+Entry Wire Line
+	2960 1420 3060 1520
+Wire Wire Line
+	3110 1520 3060 1520
+Wire Bus Line
+	2960 1270 2960 1770
+Wire Bus Line
+	1250 1330 1250 4480
+$EndSCHEMATC

@@ -1,0 +1,278 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6030 4580 5720 4580
+Wire Wire Line
+	6030 3680 6030 3320
+Connection ~ 6030 3680
+Wire Wire Line
+	6300 3680 6030 3680
+Wire Wire Line
+	6300 3720 6300 3680
+Wire Wire Line
+	6030 3320 6190 3320
+Connection ~ 6030 3320
+Wire Wire Line
+	6020 3320 6030 3320
+Wire Wire Line
+	6030 3760 6030 3680
+Wire Wire Line
+	6030 3960 6030 4120
+Wire Wire Line
+	6300 4020 6300 4120
+Connection ~ 5720 4120
+Wire Wire Line
+	5720 4300 5720 4120
+Wire Wire Line
+	6030 4120 6030 4280
+Wire Wire Line
+	5720 4500 5720 4580
+Connection ~ 6030 4120
+Wire Wire Line
+	6030 4120 6300 4120
+Wire Wire Line
+	5720 3620 5720 3840
+Wire Wire Line
+	6030 4120 5720 4120
+$Comp
+L Device:D D?
+U 1 1 5F872852
+P 6300 3870
+AR Path="/5F8556EC/5F872852" Ref="D?"  Part="1" 
+AR Path="/5F8415CA/5F872852" Ref="D4"  Part="1" 
+F 0 "D4" V 6254 3949 50  0000 L CNN
+F 1 "1N4002" V 6345 3949 50  0000 L CNN
+F 2 "" H 6300 3870 50  0001 C CNN
+F 3 "~" H 6300 3870 50  0001 C CNN
+	1    6300 3870
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F87284C
+P 6030 4430
+AR Path="/5F8556EC/5F87284C" Ref="C?"  Part="1" 
+AR Path="/5F8415CA/5F87284C" Ref="C8"  Part="1" 
+F 0 "C8" H 6148 4476 50  0000 L CNN
+F 1 "10uF" H 6148 4385 50  0000 L CNN
+F 2 "" H 6068 4280 50  0001 C CNN
+F 3 "~" H 6030 4430 50  0001 C CNN
+	1    6030 4430
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5290 2980 5290 3320
+Wire Wire Line
+	5580 2980 5290 2980
+Wire Wire Line
+	6190 2980 5880 2980
+Wire Wire Line
+	6190 3320 6190 2980
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5F872842
+P 5730 2980
+AR Path="/5F8556EC/5F872842" Ref="D?"  Part="1" 
+AR Path="/5F8415CA/5F872842" Ref="D3"  Part="1" 
+F 0 "D3" H 5730 2763 50  0000 C CNN
+F 1 "1N4002" H 5730 2854 50  0000 C CNN
+F 2 "" H 5730 2980 50  0001 C CNN
+F 3 "~" H 5730 2980 50  0001 C CNN
+F 4 "Y" H 5730 2980 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5730 2980 50  0001 L CNN "Spice_Primitive"
+	1    5730 2980
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U?
+U 1 1 5F87283A
+P 5720 3320
+AR Path="/5F7FFF52/5F87283A" Ref="U?"  Part="1" 
+AR Path="/5F8415CA/5F87283A" Ref="U2"  Part="1" 
+AR Path="/5F8556EC/5F87283A" Ref="U?"  Part="1" 
+F 0 "U2" H 5720 3562 50  0000 C CNN
+F 1 "LM317" H 5720 3471 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5720 3545 50  0001 C CIN
+F 3 "https://www.st.com/resource/en/datasheet/lm317.pdf" H 5720 3270 50  0001 C CNN
+	1    5720 3320
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F872834
+P 5720 4400
+AR Path="/5F8415CA/5F872834" Ref="R1"  Part="1" 
+AR Path="/5F8556EC/5F872834" Ref="R?"  Part="1" 
+F 0 "R1" H 5661 4354 50  0000 R CNN
+F 1 "360" H 5661 4445 50  0000 R CNN
+F 2 "" H 5720 4400 50  0001 C CNN
+F 3 "~" H 5720 4400 50  0001 C CNN
+	1    5720 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5F87282E
+P 6030 3860
+AR Path="/5F8415CA/5F87282E" Ref="R2"  Part="1" 
+AR Path="/5F8556EC/5F87282E" Ref="R?"  Part="1" 
+F 0 "R2" H 6089 3906 50  0000 L CNN
+F 1 "220" H 6089 3815 50  0000 L CNN
+F 2 "" H 6030 3860 50  0001 C CNN
+F 3 "~" H 6030 3860 50  0001 C CNN
+	1    6030 3860
+	1    0    0    -1  
+$EndComp
+Text HLabel 4960 3320 0    50   Input ~ 0
+19V
+Text HLabel 6510 3320 2    50   Input ~ 0
+3.3V
+Text HLabel 5720 4580 3    50   Input ~ 0
+GND
+Connection ~ 6190 3320
+Wire Wire Line
+	6510 3320 6190 3320
+Connection ~ 5290 3320
+Wire Wire Line
+	5290 3320 5080 3320
+Wire Wire Line
+	5420 3320 5290 3320
+$Comp
+L Device:C C?
+U 1 1 5F872813
+P 6190 3470
+AR Path="/5F7FFF52/5F872813" Ref="C?"  Part="1" 
+AR Path="/5F8415CA/5F872813" Ref="C9"  Part="1" 
+AR Path="/5F8556EC/5F872813" Ref="C?"  Part="1" 
+F 0 "C9" H 6240 3560 50  0000 L CNN
+F 1 "100nF" H 6220 3380 50  0000 L CNN
+F 2 "" H 6228 3320 50  0001 C CNN
+F 3 "~" H 6190 3470 50  0001 C CNN
+	1    6190 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F87280D
+P 6510 3470
+AR Path="/5F7FFF52/5F87280D" Ref="C?"  Part="1" 
+AR Path="/5F8415CA/5F87280D" Ref="C10"  Part="1" 
+AR Path="/5F8556EC/5F87280D" Ref="C?"  Part="1" 
+F 0 "C10" H 6540 3550 50  0000 L CNN
+F 1 "100uF" H 6550 3390 50  0000 L CNN
+F 2 "" H 6548 3320 50  0001 C CNN
+F 3 "~" H 6510 3470 50  0001 C CNN
+	1    6510 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F872807
+P 5290 3470
+AR Path="/5F7FFF52/5F872807" Ref="C?"  Part="1" 
+AR Path="/5F8415CA/5F872807" Ref="C7"  Part="1" 
+AR Path="/5F8556EC/5F872807" Ref="C?"  Part="1" 
+F 0 "C7" H 5340 3560 50  0000 L CNN
+F 1 "100nF" H 5340 3370 50  0000 L CNN
+F 2 "" H 5328 3320 50  0001 C CNN
+F 3 "~" H 5290 3470 50  0001 C CNN
+	1    5290 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F872801
+P 4960 3470
+AR Path="/5F7FFF52/5F872801" Ref="C?"  Part="1" 
+AR Path="/5F8415CA/5F872801" Ref="C6"  Part="1" 
+AR Path="/5F8556EC/5F872801" Ref="C?"  Part="1" 
+F 0 "C6" H 4990 3560 50  0000 L CNN
+F 1 "100uF" H 4990 3370 50  0000 L CNN
+F 2 "" H 4998 3320 50  0001 C CNN
+F 3 "~" H 4960 3470 50  0001 C CNN
+	1    4960 3470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6190 3620 6190 4580
+Wire Wire Line
+	6190 4580 6030 4580
+Connection ~ 6030 4580
+Wire Wire Line
+	6510 3620 6510 4580
+Wire Wire Line
+	6510 4580 6190 4580
+Connection ~ 6190 4580
+Wire Wire Line
+	5290 3620 5290 4580
+Wire Wire Line
+	5290 4580 5440 4580
+Connection ~ 5720 4580
+Wire Wire Line
+	4960 3620 4960 4580
+Wire Wire Line
+	4960 4580 5290 4580
+Connection ~ 5290 4580
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 5F88329A
+P 5080 3230
+F 0 "#FLG0108" H 5080 3305 50  0001 C CNN
+F 1 "PWR_FLAG" H 5080 3403 50  0000 C CNN
+F 2 "" H 5080 3230 50  0001 C CNN
+F 3 "~" H 5080 3230 50  0001 C CNN
+	1    5080 3230
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5F884301
+P 5440 4640
+F 0 "#FLG0109" H 5440 4715 50  0001 C CNN
+F 1 "PWR_FLAG" H 5440 4813 50  0000 C CNN
+F 2 "" H 5440 4640 50  0001 C CNN
+F 3 "~" H 5440 4640 50  0001 C CNN
+	1    5440 4640
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5440 4640 5440 4580
+Connection ~ 5440 4580
+Wire Wire Line
+	5440 4580 5720 4580
+Wire Wire Line
+	5080 3230 5080 3320
+Connection ~ 5080 3320
+Wire Wire Line
+	5080 3320 4960 3320
+$Comp
+L power:PWR_FLAG #FLG0116
+U 1 1 5F893E59
+P 5670 3840
+F 0 "#FLG0116" H 5670 3915 50  0001 C CNN
+F 1 "PWR_FLAG" H 5670 4013 50  0000 C CNN
+F 2 "" H 5670 3840 50  0001 C CNN
+F 3 "~" H 5670 3840 50  0001 C CNN
+	1    5670 3840
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5670 3840 5720 3840
+Connection ~ 5720 3840
+Wire Wire Line
+	5720 3840 5720 4120
+$EndSCHEMATC
