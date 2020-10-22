@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SMTU2032-LF)(type KiCad)(uri ${KIPRJMOD}/Izklājlaukumi/SMTU2032-LF.pretty)(options "")(descr ""))
+  (lib (name Battery_Holder)(type KiCad)(uri ${KIPRJMOD}/Izklājlaukumi/Battery_Holder.pretty)(options "")(descr ""))
+)

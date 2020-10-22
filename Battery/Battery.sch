@@ -1,0 +1,74 @@
+EESchema Schematic File Version 4
+LIBS:Battery-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR04
+U 1 1 5F8E9014
+P 1710 2840
+F 0 "#PWR04" H 1710 2590 50  0001 C CNN
+F 1 "GND" H 1715 2667 50  0000 C CNN
+F 2 "" H 1710 2840 50  0001 C CNN
+F 3 "" H 1710 2840 50  0001 C CNN
+	1    1710 2840
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5F8E9BC2
+P 1710 2540
+F 0 "#PWR03" H 1710 2390 50  0001 C CNN
+F 1 "+3V3" H 1725 2713 50  0000 C CNN
+F 2 "" H 1710 2540 50  0001 C CNN
+F 3 "" H 1710 2540 50  0001 C CNN
+	1    1710 2540
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F8E8ABD
+P 1710 2740
+F 0 "BT1" H 1828 2836 50  0000 L CNN
+F 1 "Battery_Cell" H 1828 2745 50  0000 L CNN
+F 2 "Battery_Holder:S8211-46R" V 1710 2800 50  0001 C CNN
+F 3 "https://pdf1.alldatasheet.com/datasheet-pdf/view/563073/HARWIN/S8211-46R.html" V 1710 2800 50  0001 C CNN
+	1    1710 2740
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F91D15A
+P 1710 2540
+F 0 "#FLG0101" H 1710 2615 50  0001 C CNN
+F 1 "PWR_FLAG" V 1710 2668 50  0000 L CNN
+F 2 "" H 1710 2540 50  0001 C CNN
+F 3 "~" H 1710 2540 50  0001 C CNN
+	1    1710 2540
+	0    1    1    0   
+$EndComp
+Connection ~ 1710 2540
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F91EEE9
+P 1710 2840
+F 0 "#FLG0102" H 1710 2915 50  0001 C CNN
+F 1 "PWR_FLAG" V 1710 2968 50  0000 L CNN
+F 2 "" H 1710 2840 50  0001 C CNN
+F 3 "~" H 1710 2840 50  0001 C CNN
+	1    1710 2840
+	0    1    1    0   
+$EndComp
+Connection ~ 1710 2840
+$EndSCHEMATC
