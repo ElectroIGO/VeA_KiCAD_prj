@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Rodrigo\Desktop\Iespiedplateskurss\VeA_KiCAD_prj\Battery\Battery.sch)
-    (date "2020.10.22. 19:43:18")
+    (date "2020.10.23. 15:37:07")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref BT1)
       (value Battery_Cell)
-      (footprint Battery_Holder:S8211-46R)
+      (footprint Battery_Holder:S8401-46)
       (datasheet https://pdf1.alldatasheet.com/datasheet-pdf/view/563073/HARWIN/S8211-46R.html)
       (libsource (lib Device) (part Battery_Cell) (description "Single-cell battery"))
       (sheetpath (names /) (tstamps /))

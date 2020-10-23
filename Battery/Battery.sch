@@ -42,7 +42,7 @@ U 1 1 5F8E8ABD
 P 1710 2740
 F 0 "BT1" H 1828 2836 50  0000 L CNN
 F 1 "Battery_Cell" H 1828 2745 50  0000 L CNN
-F 2 "Battery_Holder:S8211-46R" V 1710 2800 50  0001 C CNN
+F 2 "Battery_Holder:S8401-46" V 1710 2800 50  0001 C CNN
 F 3 "https://pdf1.alldatasheet.com/datasheet-pdf/view/563073/HARWIN/S8211-46R.html" V 1710 2800 50  0001 C CNN
 	1    1710 2740
 	1    0    0    -1  

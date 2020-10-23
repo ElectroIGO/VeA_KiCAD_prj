@@ -1,4 +1,4 @@
-16170477892206915
+16175288253182159
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -203,12 +203,33 @@ battery CR1225 coin cell
 0
 0
 Battery_Holder
+1060TR
+
+
+0
+3
+2
+Battery_Holder
+MP000324
+
+
+0
+2
+2
+Battery_Holder
 S8211-46R
 
 
 0
 3
 3
+Battery_Holder
+S8401-46
+
+
+0
+0
+0
 Battery_Holder
 SMTU2032
 
