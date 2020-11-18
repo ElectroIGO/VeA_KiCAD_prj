@@ -1,4 +1,4 @@
-update=2020.11.02. 14:35:48
+update=2020.11.18. 2:59:53
 version=1
 last_client=kicad
 [general]
@@ -66,7 +66,7 @@ Type=1
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=POWER
-Clearance=0.2
+Clearance=0.5
 TrackWidth=0.3
 ViaDiameter=0.8
 ViaDrill=0.4
