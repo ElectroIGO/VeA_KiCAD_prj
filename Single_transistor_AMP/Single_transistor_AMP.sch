@@ -125,39 +125,15 @@ F 4 "https://lv.farnell.com/panasonic/eee1va220sp/cap-22-f-35v-radial-smd/dp/969
 	1    4900 2990
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5F8B5E0C
-P 5090 3110
-F 0 "#PWR01" H 5090 2860 50  0001 C CNN
-F 1 "GND" H 5095 2937 50  0000 C CNN
-F 2 "" H 5090 3110 50  0001 C CNN
-F 3 "" H 5090 3110 50  0001 C CNN
-	1    5090 3110
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 2990 4420 2990
 Connection ~ 4420 2990
 Wire Wire Line
 	4420 2990 4420 3100
 NoConn ~ 2230 2850
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5F8C6ECE
-P 5290 2990
-F 0 "J3" H 5330 3190 50  0000 R CNN
-F 1 "Signal out" H 5360 3100 50  0000 R CNN
-F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" H 5290 2990 50  0001 C CNN
-F 3 "~" H 5290 2990 50  0001 C CNN
-	1    5290 2990
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 2750 2230 2750
 Connection ~ 2600 2750
-Wire Wire Line
-	3490 3170 3490 3200
 Wire Wire Line
 	3940 3170 3490 3170
 $Comp
@@ -177,28 +153,26 @@ Wire Wire Line
 	3490 3150 3490 3170
 Wire Wire Line
 	4150 3570 4150 3490
-Wire Wire Line
-	3950 2220 3950 2350
 $Comp
 L power:GND #PWR0104
 U 1 1 5F8A30A1
-P 4050 2220
-F 0 "#PWR0104" H 4050 1970 50  0001 C CNN
-F 1 "GND" H 4055 2047 50  0000 C CNN
-F 2 "" H 4050 2220 50  0001 C CNN
-F 3 "" H 4050 2220 50  0001 C CNN
-	1    4050 2220
-	1    0    0    -1  
+P 3780 2230
+F 0 "#PWR0104" H 3780 1980 50  0001 C CNN
+F 1 "GND" H 3785 2057 50  0000 C CNN
+F 2 "" H 3780 2230 50  0001 C CNN
+F 3 "" H 3780 2230 50  0001 C CNN
+	1    3780 2230
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5F89E0FF
-P 3950 2020
-F 0 "J2" V 3914 1832 50  0000 R CNN
-F 1 "32V" V 3823 1832 50  0000 R CNN
-F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" H 3950 2020 50  0001 C CNN
-F 3 "~" H 3950 2020 50  0001 C CNN
-	1    3950 2020
+P 3850 2030
+F 0 "J2" V 3814 1842 50  0000 R CNN
+F 1 "32V" V 3723 1842 50  0000 R CNN
+F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" H 3850 2030 50  0001 C CNN
+F 3 "~" H 3850 2030 50  0001 C CNN
+	1    3850 2030
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -214,36 +188,22 @@ F 3 "" H 4150 3570 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4120 2550 4120 2750
-Wire Wire Line
-	3490 2550 4120 2550
-Wire Wire Line
-	3490 2350 3950 2350
-Wire Wire Line
-	3490 2350 3020 2350
-Connection ~ 3490 2350
 $Comp
 L Device:R_Small R3
 U 1 1 5F8829A4
-P 3490 2450
-F 0 "R3" H 3549 2496 50  0000 L CNN
-F 1 "3k" H 3549 2405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3490 2450 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2339608.pdf" H 3490 2450 50  0001 C CNN
-F 4 "https://lv.farnell.com/vishay/crcw04022k70fkedhp/res-2k7-1-0-2w-0402-thick-film/dp/1738855RL?st=2.7kohm" H 3490 2450 50  0001 C CNN "Farnell"
-	1    3490 2450
-	1    0    0    -1  
+P 3500 2460
+F 0 "R3" H 3559 2506 50  0000 L CNN
+F 1 "3k" H 3559 2415 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 2460 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2339608.pdf" H 3500 2460 50  0001 C CNN
+F 4 "https://lv.farnell.com/vishay/crcw04022k70fkedhp/res-2k7-1-0-2w-0402-thick-film/dp/1738855RL?st=2.7kohm" H 3500 2460 50  0001 C CNN "Farnell"
+	1    3500 2460
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3020 3490 3490 3490
-Connection ~ 3490 3490
-Wire Wire Line
-	3490 3490 3490 3400
 Wire Wire Line
 	3940 3170 3940 3190
 Wire Wire Line
 	3940 3490 4150 3490
-Wire Wire Line
-	3490 3490 3940 3490
 Connection ~ 3940 3490
 $Comp
 L Device:CP C2
@@ -267,9 +227,8 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 3490 3300 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2310790.pdf" H 3490 3300 50  0001 C CNN
 F 4 "https://lv.farnell.com/vishay/crcw0805120rfkea/res-120r-1-0-125w-0805-thick-film/dp/1652914?st=120%20ohm" H 3490 3300 50  0001 C CNN "Farnell"
 	1    3490 3300
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
-Connection ~ 3490 2550
 $Comp
 L Device:Q_NPN_BCE Q1
 U 1 1 5F879C61
@@ -283,9 +242,6 @@ F 4 "280" H 3390 2750 50  0001 C CNN "hfe(B)"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 2350 4420 2350
-Connection ~ 3950 2350
-Wire Wire Line
 	4420 2350 4420 2550
 Wire Wire Line
 	4150 3490 4420 3490
@@ -294,8 +250,6 @@ Wire Wire Line
 Connection ~ 4150 3490
 Wire Wire Line
 	5090 2990 5050 2990
-Wire Wire Line
-	5090 3090 5090 3110
 $Comp
 L Connector:AudioJack2_Ground J1
 U 1 1 5FA2ACE4
@@ -307,4 +261,74 @@ F 3 "~" H 2030 2850 50  0001 C CNN
 	1    2030 2850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5090 3090 5090 3110
+$Comp
+L power:GND #PWR01
+U 1 1 5F8B5E0C
+P 5090 3110
+F 0 "#PWR01" H 5090 2860 50  0001 C CNN
+F 1 "GND" H 5095 2937 50  0000 C CNN
+F 2 "" H 5090 3110 50  0001 C CNN
+F 3 "" H 5090 3110 50  0001 C CNN
+	1    5090 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5F8C6ECE
+P 5290 2990
+F 0 "J3" H 5330 3190 50  0000 R CNN
+F 1 "Signal out" H 5360 3100 50  0000 R CNN
+F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" H 5290 2990 50  0001 C CNN
+F 3 "~" H 5290 2990 50  0001 C CNN
+	1    5290 2990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2230 3950 2350
+Connection ~ 3950 2350
+Wire Wire Line
+	3950 2350 4420 2350
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FC779AA
+P 3780 2230
+F 0 "#FLG?" H 3780 2305 50  0001 C CNN
+F 1 "PWR_FLAG" H 3780 2403 50  0000 C CNN
+F 2 "" H 3780 2230 50  0001 C CNN
+F 3 "~" H 3780 2230 50  0001 C CNN
+	1    3780 2230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2230 3780 2230
+Connection ~ 3780 2230
+Wire Wire Line
+	3400 2350 3400 2460
+Wire Wire Line
+	3020 2350 3400 2350
+Connection ~ 3400 2350
+Wire Wire Line
+	3600 2460 3600 2550
+Wire Wire Line
+	3490 2550 3600 2550
+Wire Wire Line
+	3400 2350 3950 2350
+Connection ~ 3600 2550
+Wire Wire Line
+	3600 2550 4120 2550
+Wire Wire Line
+	3490 3210 3390 3210
+Wire Wire Line
+	3390 3210 3390 3300
+Wire Wire Line
+	3490 3170 3490 3210
+Wire Wire Line
+	3590 3300 3590 3490
+Connection ~ 3590 3490
+Wire Wire Line
+	3590 3490 3940 3490
+Wire Wire Line
+	3020 3490 3590 3490
 $EndSCHEMATC
