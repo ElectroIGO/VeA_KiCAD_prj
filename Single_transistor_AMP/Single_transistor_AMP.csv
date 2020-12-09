@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"R11";"R_0603_1608Metric";1;"16";;;
+2;"R5,R4";"R_0603_1608Metric";2;"100";;;
+3;"R3";"R_0603_1608Metric";1;"3k";;;
+4;"R2";"R_0603_1608Metric";1;"6k8";;;
+5;"R1";"R_0603_1608Metric";1;"110k";;;
+6;"Q3";"TO-247-3_Vertical";1;"TIP140";;;
+7;"Q1";"TO-92";1;"BC546";;;
+8;"J3";"JWT_A3963_1x02_P3.96mm_Vertical";1;"Signal out";;;
+9;"J1";"Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles";1;"AudioJack2_Ground";;;
+10;"C5,C2";"CP_Elec_4x4.5";2;"470uF";;;
+11;"C1";"CP_Elec_4x4.5";1;"10uF";;;
+12;"J2";"JWT_A3963_1x02_P3.96mm_Vertical";1;"32V";;;
