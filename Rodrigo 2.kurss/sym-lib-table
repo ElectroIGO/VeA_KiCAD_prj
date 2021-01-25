@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name BME280)(type Legacy)(uri ${KIPRJMOD}/Apzīmejumi/BME280.lib)(options "")(descr ""))
+  (lib (name SN74CB)(type Legacy)(uri ${KIPRJMOD}/Apzīmejumi/SN74CB.lib)(options "")(descr ""))
+  (lib (name FPF2125)(type Legacy)(uri "C:/Users/Rodrigo/Desktop/3semestra kursa darbs/Testa iespiedplates/Sensor tests plates/Apzīmeejumi/FPF2125.lib")(options "")(descr ""))
+  (lib (name "MPU 9250")(type Legacy)(uri "C:/Users/Rodrigo/Desktop/3semestra kursa darbs/Testa iespiedplates/Sensor tests plates/Apzīmeejumi/MPU 9250.lib")(options "")(descr ""))
+)

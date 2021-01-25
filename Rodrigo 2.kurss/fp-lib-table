@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name LOCAL)(type KiCad)(uri ${KIPRJMOD}/LOCAL.pretty)(options "")(descr ""))
+  (lib (name FPF2125)(type KiCad)(uri "C:/Users/Rodrigo/Desktop/3semestra kursa darbs/Testa iespiedplates/Sensor tests plates/Izklājlaukumi/FPF2125.pretty")(options "")(descr ""))
+  (lib (name Sensors)(type KiCad)(uri ${KIPRJMOD}/izklājlaukumi/Sensors.pretty)(options "")(descr ""))
+  (lib (name MPU-9250)(type KiCad)(uri ${KIPRJMOD}/izklājlaukumi/MPU-9250.pretty)(options "")(descr ""))
+)
